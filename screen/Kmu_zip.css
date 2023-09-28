@@ -1,0 +1,106 @@
+/* 바디의 색과 너비, 높이, 마진을 주고 넘치면 자르기 */
+body {
+    width: 100%;
+    min-width: 320px;
+    margin: 0px;
+    background-color: white;
+}
+
+/* 탑버튼 컨테이너의 요소들사이에 갭을 주고 텍스트 위치, 너비 조정 */
+.top_btn_container{
+    gap: 1px;
+    text-align: center;
+    grid-template-columns: repeat(5,1fr) ;
+    display: grid;
+}
+
+/*탑버튼에 모서리곡선주고 색, 마진 주기*/
+.top_btn{
+    border-radius: 50%;
+    /* background-color:#e5f0f9; */
+    margin-inline: 3px;
+    margin-top: 6px ;
+    margin-bottom: -10px;
+}
+
+.top_str{
+    font-size: xx-small;
+}
+
+/* 버튼위에 마우스 올리면 그림자 효과 주기 */
+.top_btn:hover{
+    box-shadow: 1px 1px 20px #ddd;
+
+}
+/* 탑버튼 이미지에 패딩과 너비주기 */
+.top_img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.top_str_container{
+    gap: 1px;
+    text-align: center;
+    grid-template-columns: repeat(5,1fr) ;
+    display: grid;
+    margin-bottom: -10px;
+}
+
+/* 아래 버튼이 있는 구역의 위치 조정 */
+.bot_btn_container {
+    gap: 1px;
+    text-align: center;
+    grid-template-columns: repeat(3,1fr) ;
+    display: grid;
+    height: 100%;
+}
+
+/* 아래 버튼의 색과 마진과 라운딩처리 */
+.bot_btn{
+    text-decoration: none;
+    z-index: 1;
+    padding-top:10px;
+    border-radius: 20px;
+    background-color: #e5f0f9;
+    margin:3px;
+    height: 85px;
+}
+
+/* 버튼위에 마우스 올리면 그림자 효과 주기 */
+.bot_btn:hover{
+    box-shadow: 1px 1px 20px #ddd;
+}
+
+/* 링크버튼의 폰트사이즈와 컬러 조절 */
+.bot_btn b {
+    font-size: small;
+    color:#373C48;
+    padding : -10px;
+}
+
+/* 아래 버튼에 들어갈 이미지 위치 조정 */
+.bot_img{
+    z-index:2;
+    object-fit: cover;
+    padding:1px;
+    border-radius: 50%;
+    /*background-color: #89B2E9; */
+    margin-bottom: -15px;
+    padding: 15%;
+    width: 45%;
+    height: 45%;
+}
+#bot_btn9{
+    object-fit: cover;
+}
+a:link{
+    color: black;
+}
+a:visited{
+    color:black
+}
+/* 마지막 줄의 버전과 개발자 텍스트 위치 조정 */
+footer{
+    text-align: center;
+    padding: 10px;
+}

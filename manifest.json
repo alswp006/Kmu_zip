@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Kmu_zip",
+    "description": "계명대학교의 주요 홈페이지들의 접근을 쉽게 해줍니다",
+    "version": "1.0.1",
+    "action": {
+        "default_icon":"./icons/school.png",
+        "default_popup": "./screen/Kmu_zip.html"
+      }
+  }
